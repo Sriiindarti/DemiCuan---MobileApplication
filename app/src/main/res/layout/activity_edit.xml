@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="EditActivity">
+
+
+    <!--Field Jumlah Uang-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="6dp"
+        android:text="Jumlah Uang*"
+        android:textColor="#CCCCCC"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/edit_jumlah"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/style_borderfield"
+        android:hint="Jumlah Uang"
+        android:inputType="numberDecimal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/colorFontPrimary"
+        app:decimal_digits="0" />
+
+
+    <!--Field Keterangan-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="6dp"
+        android:text="Keterangan"
+        android:textColor="#CCCCCC"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/edit_keterangan"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/style_borderfield"
+        android:hint="Keterangan"
+        android:inputType="textCapWords"
+        android:maxLines="10"
+        android:minLines="4"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/colorFontPrimary" />
+
+
+    <!--Field Tanggal-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="6dp"
+        android:text="Tanggal"
+        android:textColor="#CCCCCC"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/edit_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/style_borderfield"
+        android:hint="Tanggal"
+        android:inputType="date"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/colorFontPrimary"
+        android:textSize="18sp" />
+
+
+    <!--Field RadioButton-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="6dp"
+        android:text="Status Uang"
+        android:textColor="#CCCCCC"
+        android:textSize="12dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_masuk"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:background="@drawable/style_buttonslider"
+            android:text="MASUK"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorFontPrimary" />
+
+        <RadioButton
+            android:id="@+id/radio_keluar"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:background="@drawable/style_buttonslider"
+            android:text="KELUAR"
+            android:textColor="@color/colorFontPrimary" />
+    </RadioGroup>
+
+
+    <!--Button Simpan-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/style_mainbutton"
+            android:text="SIMPAN PERUBAHAN"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

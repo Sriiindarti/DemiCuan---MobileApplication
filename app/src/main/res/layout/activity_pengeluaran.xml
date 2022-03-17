@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".PengeluaranActivity">
+
+
+    <!--Field Jumlah Uang-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#CCCCCC"
+        android:text="Jumlah Uang"
+        android:textSize="12dp" />
+
+    <com.blackcat.currencyedittext.CurrencyEditText
+        android:id="@+id/edt_jumlah"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/style_borderfield"
+        android:inputType="numberDecimal"
+        android:paddingLeft="8dp"
+        android:textColor="#fff"
+        app:decimal_digits="0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="6dp"
+        android:textColor="#CCCCCC"
+        android:text="Keterangan"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/style_borderfield">
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#fff"
+            android:dropDownSelector="#fff"
+            android:textColor="#fff"
+            android:spinnerMode="dialog"
+            android:popupBackground="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+
+    //Button Simpan
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/style_mainbutton"
+            android:text="SIMPAN"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

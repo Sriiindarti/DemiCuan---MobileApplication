@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DemiCuan</string>
+
+    <string name="next">→</string>
+    <string name="skip">SKIP</string>
+    <string name="start">→</string>
+
+    <string name="slide_1_title">Simple Interface For You</string>
+    <string name="slide_2_title">Manage Money For Better Future</string>
+    <string name="slide_3_title">Easy To Use Application</string>
+</resources>
